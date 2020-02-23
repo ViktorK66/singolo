@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Black.ttf") format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Heavy.ttf") format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Semibold.ttf") format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Medium.ttf") format('truetype');
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Light.ttf") format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Thin.ttf") format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Hairline.ttf") format('truetype');
+  font-weight: 100;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: grid;
+  max-width: 1020px;
+  width: 100%;
+  border: 0px;
+  margin: 0 auto;
+}
