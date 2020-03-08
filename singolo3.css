@@ -1,0 +1,227 @@
+@import "singolo2.css" screen;
+/*Get a Quote (Блок Get a Quote)*/
+.get_a_quote {
+  position: relative;
+  width: 100%;
+  height: 648px;
+  background-color: #f06c64;
+  box-shadow: 0px 6px 0px 0px #ea676b;
+  padding: 35px 40px 0px 40px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.get_a_quote-title {
+  color: #f0d8d9;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.15px;
+}
+
+.get_a_quote-description {
+  position: relative;
+  top: -8px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #f0d8d9;
+  letter-spacing: -0.22px;
+}
+
+.get_a_quote-description--second {
+  letter-spacing: -0.048px;
+}
+
+.get_a_quote-content {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin-top: 36px;
+  background-color: transparent;
+}
+
+.get_a_quote-content--form {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 619px;
+  height: auto;
+  background-color: transparent;
+}
+
+.form-input_text {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: 38px;
+  background-color: #d6564f;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 12px;
+  color: #f0d8d9;
+  box-sizing: border-box;
+  transition: 0.25s ease-out;
+}
+
+.form-input_text::placeholder {
+  color: #f48c8f;
+}
+
+.form-input_text:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form-input_textarea {
+  min-height: 202px;
+  padding-top: 10px;
+  letter-spacing: -0.05px;
+}
+
+.form-submit {
+  height: 38px;
+  width: 100%;
+  border: none;
+  background-color: #d6564f;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #f0d8d9;
+  transition: 0.25s ease-out;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.form-submit:hover {
+  background-color: #f0d8d9;
+  color: #d6564f;
+}
+
+.get_a_quote-content--contacts_info {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 301px;
+  height: auto;
+  color: #f0d8d9;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.contact_info-title {
+  margin-top: 0px;
+  margin-left: 1px;
+  letter-spacing: 0.1px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+}
+
+.contact_info-description {
+  margin-top: -9px;
+  font-size: 12px;
+  line-height: 22.5px;
+  letter-spacing: -0.03px;
+  text-align: justify;
+}
+
+.contact_info-address {
+  display: block;
+  position: relative;
+  margin-top: 26px;
+  padding-left: 23.5px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.15px;
+  color: #f0d8d9;
+}
+
+.contact_info-address::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-left: 4px;
+  width: 23px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-image: url("assets/images/contacts/location.png");
+}
+
+.contact_info-phone {
+  display: block;
+  position: relative;
+  margin-top: -3px;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.185px;
+  color: #f0d8d9;
+  text-decoration: none;
+}
+
+.contact_info-phone:hover {
+  text-decoration: underline;
+}
+
+.contact_info-phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 14px;
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  background-image: url("assets/images/contacts/phone.png");
+}
+
+.contact_info-email {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0px;
+  color: #f0d8d9;
+  text-decoration: none;
+}
+
+.contact_info-email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 14px;
+  margin: 3px 0 0 1px;
+  background-repeat: no-repeat;
+  background-image: url("assets/images/contacts/mail.png");
+}
+
+.footer {
+  display: flex;
+  background-color: #2d303a;
+  height: 82px;
+  z-index: 1;
+}
+
+.footer-copyright {
+  display: block;
+  position: relative;
+  margin: 36px 0px 0px 42px;
+  font-size: 12px;
+  color: #666d89;
+  text-align: justify;
+  letter-spacing: -0.225px;
+  margin-right: 602px;
+}
+
+.footer-social {
+  display: flex;
+  position: relative;
+  margin-top: 28px ;
+}
+
