@@ -264,6 +264,11 @@ h1::after {
   left: 0.15px
 }
 
+.services-cell:nth-child(3n+1) .services-cell--icon{
+  position: relative;
+  left: 1px;
+}
+
 .services-cell--description {
   width: 220px;
 }
@@ -688,7 +693,7 @@ h1::after {
   display: block;
   position: relative;
   margin-top: 26px;
-  padding-left: 23.5px;
+  padding-left: 24px;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: -0.15px;
@@ -745,6 +750,10 @@ h1::after {
   letter-spacing: 0px;
   color: #f0d8d9;
   text-decoration: none;
+}
+
+.contact_info-email:hover {
+  text-decoration: underline;
 }
 
 .contact_info-email::before {
