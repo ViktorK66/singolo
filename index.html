@@ -7,6 +7,7 @@
     <title>SINGOLO</title>
     <meta name="description" content="Сайт созданный по шаблону">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./script.js" async type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
@@ -37,17 +38,31 @@
       </div>
     </header>
     <div class="slider">
-      <div class="slider-content">
-        <img class="arrow arrow-left" src="./assets/images/slider/left-arrow.png" alt="prev">
+      <img id="previous" class="arrow arrow-left" src="./assets/images/slider/left-arrow.png" alt="prev">
+      <div class="slider-content slider1 active">
         <div class="iphone">
           <img class="iphone-vertical" src="./assets/images/slider/iphone-vertical.png" alt="iphone vertical">
           <img class="iphone-horizontal" src="./assets/images/slider/iphone-horizontal.png" alt="iphone horizontal">
+          <div class="iphone-vertical--duplicate">
+            <div class="iphone-vertical--off"></div>
+          </div>
+          <div class="iphone-horizontal--duplicate" >
+            <div class="iphone-horizontal--off"></div>
+          </div>
         </div>
-        <img class="arrow arrow-right" src="./assets/images/slider/right-arrow.png" alt="next">
       </div>
+      <div class="slider-content slider2">
+        <img id="phone1" src="./assets/images/slider/phone1.png" alt="iphone 1">
+        <img id="phone2" src="./assets/images/slider/phone2.png" alt="iphone 2">
+        <img id="phone3" src="./assets/images/slider/phone1.png" alt="iphone 3">
+
+      </div>
+      <img id="next" class="arrow arrow-right" src="./assets/images/slider/right-arrow.png" alt="next">
+ 
     </div>
+    <div  id="services"></div>
     <div class="services">
-      <h2 class="services-title" id="services">Our Services</h2>
+      <h2 class="services-title" >Our Services</h2>
       <p class="services-description">
         <span class="services-description--second">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span> 
                                                    ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -109,57 +124,59 @@
         </div>
       </div>
     </div>
-    <div class="portfolio" id="portfolio">
+    <div  id="portfolio"></div>
+    <div class="portfolio">
       <h2 class="portfolio-title">Portfolio</h2>
       <p class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
       <div class="portfolio-images">
         <div class="portfolio-images--filter">
-          <button class="filter-element filter-element-selected">All</button>
-          <button class="filter-element">Web Design</button>
-          <button class="filter-element">Graphic Design</button>
-          <button class="filter-element">Artwork</button>
+          <button class="filter-element filter-element-selected" value="All">All</button>
+          <button class="filter-element" value="Web Design">Web Design</button>
+          <button class="filter-element" value="Graphic Design">Graphic Design</button>
+          <button class="filter-element" value="Artwork">Artwork</button>
         </div>
         <ul class="portfolio-images--section">
           <li>
-            <img src="assets/images/portfolio/image-1.png" alt="image 1">
+            <img class="image" data-genre="Artwork" src="assets/images/portfolio/image-1.png" alt="image 1">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-2.png" alt="image 2">
+            <img class="image " data-genre="Web Design"  src="assets/images/portfolio/image-2.png" alt="image 2">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-3.png" alt="image 3">
+            <img class="image" data-genre="Graphic Design" src="assets/images/portfolio/image-3.png" alt="image 3">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-4.png" alt="image 4">
+            <img class="image" data-genre="Artwork"  src="assets/images/portfolio/image-4.png" alt="image 4">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-5.png" alt="image 5">
+            <img class="image" data-genre="Graphic Design"src="assets/images/portfolio/image-5.png" alt="image 5">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-6.png" alt="image 6">
+            <img class="image" data-genre="Artwork"  src="assets/images/portfolio/image-6.png" alt="image 6">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-7.png" alt="image 7">
+            <img class="image" data-genre="Web Design" src="assets/images/portfolio/image-7.png" alt="image 7">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-8.png" alt="image 8">
+            <img class="image" data-genre="Artwork"  src="assets/images/portfolio/image-8.png" alt="image 8">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-9.png" alt="image 9">
+            <img class="image" data-genre="Artwork"  src="assets/images/portfolio/image-9.png" alt="image 9">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-10.png" alt="image 10">
+            <img class="image" data-genre="Web Design" src="assets/images/portfolio/image-10.png" alt="image 10">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-11.png" alt="image 11">
+            <img class="image" data-genre="Web Design" src="assets/images/portfolio/image-11.png" alt="image 11">
           </li>
           <li>
-            <img src="assets/images/portfolio/image-12.png" alt="image 12">
+            <img class="image" data-genre="Graphic Design" src="assets/images/portfolio/image-12.png" alt="image 12">
           </li>
         </ul>
       </div>
     </div>
-    <div class="about_us" id="about">
+    <div id="about"></div>
+    <div class="about_us">
       <h2 class="about_us-title">About Us</h2>
       <p class="about_us-description">
         <span class="about_us-description--second">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span> 
@@ -225,19 +242,20 @@
         </div>
       </div>
     </div>
+    <div  id="contact"></div>
     <div class="get_a_quote" id="quote">
       <h2 class="get_a_quote-title">Get a Quote</h2>
       <p class="get_a_quote-description">
       <span class="get_a_quote-description--second">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span> 
                                                     ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       </p>
-      <div class="get_a_quote-content" id="contact">
-        <form class="get_a_quote-content--form" action="#" method="POST">
+      <div class="get_a_quote-content">
+        <form class="get_a_quote-content--form"  method="POST" >
           <input class="form-input_text" type="text" name="name" placeholder="Name (Required)" required>
           <input class="form-input_text" type="email" name="email" placeholder="Email (Required)" required>
           <input class="form-input_text" type="text" name="subject" placeholder="Subject">
           <textarea class="form-input_text form-input_textarea" name="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-          <button class="form-submit" type="submit">Submit</button>
+          <button class="form-submit" type="button" formaction="">Submit</button>
         </form>
         <div class="get_a_quote-content--contacts_info">
           <h3 class="contact_info-title">Contact Information</h3>
@@ -267,5 +285,16 @@
         </a>
       </div>
     </footer>
+
+    <div class="message">
+      <div class="message-screen">
+        <div class="message-header">
+          <h2 class="message-title">The letter was sent</h2>
+          <p class="message-subject">Subject:</p>
+        </div>
+        <div class="message-description"></div>
+        <button type="button" class="medal-button">OK</button>
+      </div>
+    </div>
   </body>
 </html>
