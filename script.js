@@ -139,3 +139,29 @@ buttonOK.onclick = function () {
   message.style.display = 'none';
 }
 
+var sidebarMenu = document.querySelector('.sidebar-menu');
+var sidebar = document.querySelector('.sidebar');
+var logo = document.querySelector('.logotype'); 
+sidebarMenu.onclick = function () {
+  if (sidebar.style.display == 'block') {
+    sidebar.style.display = 'none';
+    sidebarMenu.style.transform = 'rotate(-90deg)';
+    logo.style.margin = '24px 0px 23px 39.47%';
+  } else {
+    sidebar.style.display = 'block';
+    sidebarMenu.style.transform = 'rotate(0deg)';
+    logo.style.margin = '24px 0px 23px 71px';
+  }
+
+}
+
+var sidebarLink = document.querySelectorAll('.sidebar-navigation--link');
+for(let i=0;i<sidebarLink.length;i++) {
+  sidebarLink[i].onclick = function () {
+    if (sidebar.style.display == 'block') {
+      sidebar.style.display = 'none';
+      sidebarMenu.style.transform = 'rotate(-90deg)';
+      logo.style.margin = '24px 0px 23px 39.47%';
+    }
+  }
+}
